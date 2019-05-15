@@ -20,13 +20,15 @@ public class Queue {
 //        linkQueue.dequeue();
 //        linkQueue.print();
 
-        ArrayQueue arrayQueue = new ArrayQueue(7);
+        ArrayQueue arrayQueue = new ArrayQueue(3);
         arrayQueue.print();
         arrayQueue.enqueue(1);
         arrayQueue.enqueue(2);
         arrayQueue.enqueue(3);
         arrayQueue.print();
         arrayQueue.dequeue();
+        arrayQueue.print();
+        arrayQueue.enqueue(4);
         arrayQueue.print();
     }
 

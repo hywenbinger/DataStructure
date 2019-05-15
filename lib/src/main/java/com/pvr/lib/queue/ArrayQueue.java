@@ -16,9 +16,19 @@ public class ArrayQueue {
     }
 
     public boolean enqueue(int data){
-        if(tail >= size){
-            //入队失败
-            return false;
+        if(tail == size){
+            if(head == 0){
+                //队列慢了，对头还是0，入队失败
+                return false;
+            }
+            //数据迁移
+            for(int i=head;i<tail;i++){
+                items[i-head] = items[i];
+            }
+            //迁移完数据，重新定位head和tail
+            tail -= head;
+            head = 0;
+
         }
         items[tail] = data;
         ++tail;
