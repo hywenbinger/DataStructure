@@ -1,11 +1,11 @@
 package com.pvr.lib.queue;
 
-import com.pvr.lib.link.Node;
+import com.pvr.lib.linked.Node;
 
 /**
  * 链式队列
  */
-public class LinkQueue {
+public class LinkedQueue {
 
     private Node head = null;//队头节点
     private Node tail = null;//队尾节点

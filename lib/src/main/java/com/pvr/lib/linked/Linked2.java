@@ -1,9 +1,9 @@
-package com.pvr.lib.link;
+package com.pvr.lib.linked;
 
 /**
  * 链表
  */
-public class Link2 {
+public class Linked2 {
 
     public static void main(String[] args) {
 //        Node node1 = new Node(1, null);

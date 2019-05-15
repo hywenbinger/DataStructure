@@ -15,6 +15,13 @@ public class ArrayQueue {
         this.size = size;
     }
 
+    /**
+     * 由于到队尾时，可能会进行数据迁移，所以队入队操作性能会有影响
+     * 有什么办法可避免入队时数据迁移呢？
+     * 循环队列可解决这个问题
+     * @param data
+     * @return
+     */
     public boolean enqueue(int data){
         if(tail == size){
             if(head == 0){
@@ -42,7 +49,8 @@ public class ArrayQueue {
      * @return
      */
     public int dequeue(){
-        if(tail == 0){
+        //如果head == tail，表示队列为空
+        if(head == tail){
             return -1;
         }
         int value = items[head];

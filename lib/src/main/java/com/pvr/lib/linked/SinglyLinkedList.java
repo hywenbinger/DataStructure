@@ -1,22 +1,6 @@
-package com.pvr.lib.link;
+package com.pvr.lib.linked;
 
-public class Link {
-
-    public static void main(String[] args) {
-
-        SinglyLinkedList linkedList = new SinglyLinkedList();
-        linkedList.insertToHead(0);
-        linkedList.insertToHead(1);
-        linkedList.insertToHead(2);
-        linkedList.printAll();
-        System.out.println("--------------");
-        linkedList.reverse();
-        linkedList.printAll();
-    }
-
-}
-
-class SinglyLinkedList{
+public class SinglyLinkedList{
 
     /**
      * 头结点

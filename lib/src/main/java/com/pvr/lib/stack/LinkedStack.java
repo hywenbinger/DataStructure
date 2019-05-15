@@ -1,11 +1,11 @@
 package com.pvr.lib.stack;
 
-import com.pvr.lib.link.Node;
+import com.pvr.lib.linked.Node;
 
 /**
  * 链式栈
  */
-public class LinkStack{
+public class LinkedStack {
 
     private Node top = null;
 

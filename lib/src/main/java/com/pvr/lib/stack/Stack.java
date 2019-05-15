@@ -16,7 +16,7 @@ public class Stack {
         arrayStack.pop();
         arrayStack.print();
 
-        LinkStack linkStack = new LinkStack();
+        LinkedStack linkStack = new LinkedStack();
         linkStack.push(1);
         linkStack.push(2);
         linkStack.push(3);

@@ -1,4 +1,4 @@
-package com.pvr.lib.link;
+package com.pvr.lib.linked;
 
 public class Node {
 
